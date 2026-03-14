@@ -62,6 +62,8 @@ API documentation: [View Swagger Docs](https://rideshare-api-dmanbedkcvhbfqbh.it
 
 FastAPI. (n.d.). *FastAPI documentation*. Retrieved from [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)
 
+FastAPI. (n.d.). *FastAPI documentation*. Retrieved from [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)
+
 React official docs for function components and conditional rendering: https://react.dev/learn/conditional-rendering
 
 React Router docs for Link: https://reactrouter.com/en/main/components/link

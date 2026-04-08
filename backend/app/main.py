@@ -2,12 +2,11 @@ from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.database import Base, engine, run_startup_migrations
+from app.database import Base, engine
 from routes import auth_routes, driver_routes, trip_routes, booking_routes, passenger_routes
 
 load_dotenv()
 
-run_startup_migrations()
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Babla Cars API", version="1.0.0")

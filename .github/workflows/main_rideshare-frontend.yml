@@ -25,7 +25,7 @@ jobs:
         working-directory: frontend
 
       - name: Build app
-        run: npm run build
+        run: npx react-scripts build
         working-directory: frontend
 
       - name: Upload artifact for deployment job

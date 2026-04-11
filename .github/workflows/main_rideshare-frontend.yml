@@ -28,11 +28,19 @@ jobs:
         run: node node_modules/react-scripts/bin/react-scripts.js build
         working-directory: frontend
 
+      - name: Prepare deployment package
+        run: |
+          mkdir deploy
+          cp frontend/package.json deploy/package.json
+          cp frontend/package-lock.json deploy/package-lock.json
+          cp frontend/server.js deploy/server.js
+          cp -r frontend/build deploy/build
+
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: frontend/build
+          path: deploy
 
   deploy:
     runs-on: ubuntu-latest

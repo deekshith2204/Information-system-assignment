@@ -21,11 +21,11 @@ jobs:
           node-version: '20.x'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
         working-directory: frontend
 
       - name: Build app
-        run: npx react-scripts build
+        run: node node_modules/react-scripts/bin/react-scripts.js build
         working-directory: frontend
 
       - name: Upload artifact for deployment job

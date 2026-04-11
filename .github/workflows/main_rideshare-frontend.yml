@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     permissions:
       contents: read
 
@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          rm -f package-lock.json
+          if (Test-Path package-lock.json) { Remove-Item package-lock.json -Force }
           npm install --package-lock=false
         working-directory: frontend
 
@@ -32,10 +32,10 @@ jobs:
 
       - name: Prepare deployment package
         run: |
-          mkdir deploy
-          cp frontend/package.json deploy/package.json
-          cp frontend/server.js deploy/server.js
-          cp -r frontend/build deploy/build
+          New-Item -ItemType Directory -Path deploy -Force | Out-Null
+          Copy-Item frontend/package.json deploy/package.json
+          Copy-Item frontend/server.js deploy/server.js
+          Copy-Item frontend/build deploy/build -Recurse
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4

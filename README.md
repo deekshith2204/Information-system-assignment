@@ -10,8 +10,11 @@ React is used for frontend to build a responsive and component-driven user exper
 
 - Steps to run frontend locally
 To run the frontend locally, the required dependencies can be installed using Node.js.To run execute the following commads.
+
 1.cd frontend
+
 2.npm install
+
 3.npm start
 
 After running the above commands open: http://localhost:8080
@@ -22,12 +25,19 @@ FastAPI is used for API development at the backend with an easily understandable
 -Steps to run backend locally
 
 To run the backend locally, a Python virtual environment should be created and activated before installing the required packages listed in `requirements.txt`.
+
 1.cd backend
+
 2.py -3.12 -m venv .venv
+
 3..\.venv\Scripts\Activate.ps1
+
 4.python -m pip install --upgrade pip
+
 5.pip install -r requirements.txt
+
 6.uvicorn app.main:app --reload
+
 Once the backend is running, the API documentation is available at: /http://localhost:8000/docs
 
 # Links

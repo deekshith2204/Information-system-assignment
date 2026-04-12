@@ -22,7 +22,7 @@ After running the above commands open: http://localhost:8080
 # Backend
 FastAPI is used for API development at the backend with an easily understandable and maintainable structure. SQLAlchemy also provides database interaction, with application models easily mapping to PostgreSQL tables. Pydantic is a request and response validation tool to aid in making sure that data processing is consistent and secure. To deploy it, both Gunicorn and Uvicorn are deployed in tandem to execute the FastAPI application in a production-ready setup.
 
--Steps to run backend locally
+- Steps to run backend locally
 
 To run the backend locally, a Python virtual environment should be created and activated before installing the required packages listed in `requirements.txt`.
 
@@ -40,13 +40,34 @@ To run the backend locally, a Python virtual environment should be created and a
 
 Once the backend is running, the API documentation is available at: /http://localhost:8000/docs
 
-# Links
+# Azure Development Links
 
 The Babla Cars application is available online through Azure App Service.
 
-Frontend application: [Open Babla Cars](https://rideshare-frontend.azurewebsites.net)
+Frontend application: [Open Babla Cars](rideshare-frontend-gubbhzh8e3e7ateb.italynorth-01.azurewebsites.net)
 
 Backend API: [Open Backend API](https://rideshare-api-dmanbedkcvhbfqbh.italynorth-01.azurewebsites.net)
 
 API documentation: [View Swagger Docs](https://rideshare-api-dmanbedkcvhbfqbh.italynorth-01.azurewebsites.net/docs)
 
+# Reffrences
+
+React official docs for function components and conditional rendering: https://react.dev/learn/conditional-rendering
+
+React Router docs for Link: https://reactrouter.com/en/main/components/link
+
+React Router docs for useNavigate: https://reactrouter.com/en/main/hooks/use-navigate
+
+MDN docs for localStorage: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
+React docs on components: https://react.dev/learn/your-first-component
+
+React docs on useState: https://react.dev/reference/react/useState
+
+MDN docs for JSON.parse: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
+
+PostgreSQL Global Development Group. (n.d.). *PostgreSQL documentation*. Retrieved from [https://www.postgresql.org/docs/](https://www.postgresql.org/docs/)
+
+Microsoft. (n.d.). *Azure App Service documentation*. Retrieved from [https://learn.microsoft.com/en-us/azure/app-service/](https://learn.microsoft.com/en-us/azure/app-service/)
+
+GitHub. (n.d.). *GitHub Actions documentation*. Retrieved from [https://docs.github.com/en/actions](https://docs.github.com/en/actions)

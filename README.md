@@ -44,13 +44,15 @@ Once the backend is running, the API documentation is available at: /http://loca
 
 The Babla Cars application is available online through Azure App Service.
 
-Frontend application: [Open Babla Cars](rideshare-frontend-gubbhzh8e3e7ateb.italynorth-01.azurewebsites.net)
+Frontend application: [Open Babla Cars](https://rideshare-frontend-gubbhzh8e3e7ateb.italynorth-01.azurewebsites.net)
 
 Backend API: [Open Backend API](https://rideshare-api-dmanbedkcvhbfqbh.italynorth-01.azurewebsites.net)
 
 API documentation: [View Swagger Docs](https://rideshare-api-dmanbedkcvhbfqbh.italynorth-01.azurewebsites.net/docs)
 
 # Reffrences
+
+FastAPI. (n.d.). *FastAPI documentation*. Retrieved from [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)
 
 React official docs for function components and conditional rendering: https://react.dev/learn/conditional-rendering
 

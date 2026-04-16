@@ -40,6 +40,14 @@ To run the backend locally, a Python virtual environment should be created and a
 
 Once the backend is running, the API documentation is available at: /http://localhost:8000/docs
 
+ #Testing
+
+Automated test cases were added to provide an initial technical validation layer for both the frontend and backend of the Babla 
+Cars application. On the frontend, a unit test was created in frontend/src/App.test.js to verify that the main React application s
+hell renders correctly, including the application title, navigation structure, and primary page content. This confirms that the 
+component tree can load successfully without runtime failure. On the backend, a Python test module was created in backend/tests/
+test_utils.py using the unittest framework to validate utility-level logic and configuration integrity.
+
 # Azure Development Links
 
 The Babla Cars application is available online through Azure App Service.

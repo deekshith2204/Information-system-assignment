@@ -60,9 +60,12 @@ API documentation: [View Swagger Docs](https://rideshare-api-dmanbedkcvhbfqbh.it
 
 # Reffrences
 
-FastAPI. (n.d.). *FastAPI documentation*. Retrieved from [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)
+For github workflows to work correct, updated packages.joson, packages-lock.json file take the help from claude : https://claude.ai/chat/bbbcd110-5864-4e04-9518-9ef98f3c8a2c
+
 
 FastAPI. (n.d.). *FastAPI documentation*. Retrieved from [https://fastapi.tiangolo.com/](https://fastapi.tiangolo.com/)
+
+After using the fast api offical docs got some minor errors in routers, so accepted vs-code copilot suggestions.
 
 React official docs for function components and conditional rendering: https://react.dev/learn/conditional-rendering
 
